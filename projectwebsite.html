@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>JOE'S TAMBAYAN</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      color: #fff;
+      background-color: #2d2b2b;
+    }
+
+    header {
+      position: relative;
+      height: 100vh;
+      background: url('bg.jpeg') center center / cover no-repeat;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      text-shadow: 2px 2px 5px #000;
+      text-align: center;
+      overflow: hidden;
+    }
+
+    header::before {
+      content: "";
+      position: absolute;
+      top: 0; left: 0; right: 0; bottom: 0;
+      background-color: rgba(0, 0, 0, 0.6);
+      z-index: 0;
+    }
+
+    header h1,
+    header p {
+      position: relative;
+      z-index: 1;
+    }
+
+    header h1 {
+      font-size: 100px;
+      margin-bottom: 10px;
+    }
+
+    header p {
+      font-size: 50px;
+    }
+
+    nav {
+      background-color: #ffcc66;
+      display: flex;
+      justify-content: center;
+      padding: 10px;
+      position: sticky;
+      top: 0;
+    }
+
+    nav a {
+      color: #3b3b3b;
+      text-decoration: none;
+      margin: 0 20px;
+      font-weight: bold;
+      transition: color 0.3s ease;
+    }
+
+    nav a:hover {
+      color: #fff;
+    }
+
+    section {
+      padding: 40px 20px;
+      text-align: center;
+    }
+
+    #about, #menu, #contact {
+      background-color: #3b3b3b;
+      margin-bottom: 10px;
+    }
+
+    h2 {
+      color: #ffcc66;
+      margin-bottom: 20px;
+      font-size: 80px;
+    }
+
+    .menu-item {
+      margin: 10px 0;
+    }
+
+    .contact-info {
+      line-height: 1.8;
+    }
+
+    .contact-info img {
+      width: 24px;
+      vertical-align: middle;
+      margin-right: 10px;
+      border-radius: 50px;
+    }
+
+
+    #gallery {
+      background-color: #3b3b3b;
+      padding: 40px 20px;
+      text-align: center;
+    }
+
+    .gallery-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 20px;
+      max-width: 1000px;
+      margin: auto;
+      padding: 10px;
+    }
+
+    .gallery-grid img {
+      width: 100%;
+      aspect-ratio: 1 / 1;
+      object-fit: cover;
+      border-radius: 10px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.5);
+    }
+
+    .contactPage{
+      background-color: #ffcc66;
+      color:#000;
+      
+    }
+
+    #contactPage {
+  background-color: #ffcc66;
+  color: #000;
+  padding: 40px 20px;
+}
+
+.contact-flex {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  gap: 40px;
+}
+
+#contactPage h2 {
+  font-size: 40px;
+  margin: 0;
+  color: #000;
+}
+
+.contact-info {
+  line-height: 1.8;
+  text-align: left;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  gap: 40px;
+}
+
+.contact-info p {
+  margin: 5px 0;
+}
+
+.contact-info img {
+  width: 24px;
+  vertical-align: middle;
+  margin-right: 10px;
+  border-radius: 50px;
+}
+
+
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>JOE'S TAMBAYAN</h1>
+    <p>Tambay, Chill, and Cheers!</p>
+  </header>
+
+  <nav>
+    <a href="#about">About Us</a>
+    <a href="#gallery">Gallery</a>
+    <a href="#contact">Contact Us</a>
+  </nav>
+
+  <section id="about">
+    <h2>About Us</h2>
+    <div style="display: flex; flex-wrap: wrap; align-items: center; justify-content: center; max-width: 1000px; margin: auto; padding: 20px;">
+      <div style="flex: 1; min-width: 300px; padding: 10px;">
+        <img src="bg.jpeg" alt="Joe's Tambayan Bar" style="width: 100%; border-radius: 10px; box-shadow: 0 0 10px rgba(0,0,0,0.5);" />
+      </div>
+      <div style="flex: 1; min-width: 300px; padding: 10px; text-align: left;">
+        <p>
+          Welcome to <strong>JOE'S TAMBAYAN</strong> — the ultimate chill spot in Cordova, Cebu! Whether you're in the mood for cold drinks, tasty pulutan, or simply catching up with friends, this is the place to be.
+        </p>
+        <p>
+          <strong> tambay, unwind, and enjoy the local vibe. Cheers to good times at Joe's!</strong>
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <section id="gallery">
+    <h2>Gallery</h2>
+    <div class="gallery-grid">
+      <img src="one.jpeg" alt="Gallery Image 1">
+      <img src="two.jpeg" alt="Gallery Image 2">
+      <img src="three.jpeg" alt="Gallery Image 3">
+      <img src="four.jpeg" alt="Gallery Image 4">
+    </div>
+  </section>
+
+  <section id="contactPage">
+    <div class="contact-flex">
+      <h2>Get in Touch with Us</h2>
+      <div class="contact-info">
+        <p><img src="phone-icon.jpg" alt="Phone Icon">09486103490</p>
+        <p><img src="location-icon.jpg" alt="Location Icon">Cordova, Cebu</p>
+      </div>
+    </div>
+  </section>
+  
+
+</body>
+</html>
